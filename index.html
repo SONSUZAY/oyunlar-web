@@ -11,7 +11,6 @@
     
     <style>
         body {
-            /* Ana sayfa ile aynı uzay teması */
             background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
             color: #fff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,7 +21,6 @@
             overflow-x: hidden; 
         }
 
-        /* --- HAREKETLİ YILDIZ EFEKTİ --- */
         .stars {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -58,7 +56,6 @@
             z-index: 2;
         }
         
-        /* IZGARA YAPISI */
         .game-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
@@ -70,7 +67,6 @@
             z-index: 2;
         }
 
-        /* KART YAPISI */
         .game-card {
             background-color: rgba(26, 26, 56, 0.8); 
             padding: 12px; 
@@ -86,7 +82,6 @@
             border-color: #39FF14;
         }
         
-        /* Etiketler */
         .badge-container {
             position: absolute; top: 5px; left: 5px;
             display: flex; flex-direction: column; gap: 3px; z-index: 5;
@@ -111,7 +106,6 @@
         }
         .game-card a:hover { background-color: #00cccc; box-shadow: 0 0 10px #00cccc; }
         
-        /* RESİM AYARLARI */
         .game-card img {
             width: 50%; 
             height: auto; 
@@ -123,7 +117,6 @@
             margin-right: auto; 
         }
 
-        /* Geri Dön Butonu */
         .back-btn {
             display: inline-block;
             margin-top: 30px;
@@ -150,7 +143,7 @@
     <div class="stars" id="starContainer"></div>
 
     <h1>🎮 SONSUZ.AY OYUN GALERİSİ</h1>
-    <p class="subtitle">En yeni oyunlarımızı keşfet ve eğlenceye katıl!</p>
+    <p class="subtitle">En yeni oyunlarimizi keşfet ve eğlenceye katıl!</p>
     
     <div class="game-grid">
         
@@ -173,6 +166,16 @@
             <h2>SPACE SAVAŞ</h2>
             <p>Derin uzayda nefes kesen yeni bir macera! Düşmanları yok et ve hayatta kal.</p>
             <a href="space_yeni.html">HEMEN OYNA</a> 
+        </div>
+
+        <div class="game-card" style="border: 1px solid #39FF14;">
+            <div class="badge-container">
+                <span class="badge-new">YENİ</span>
+            </div>
+            <img src="xox_simge.jpg" alt="XOX Oyunu"> 
+            <h2>XOX</h2>
+            <p>Strateji ve hızın buluştuğu bu zamansız klasik, SONSUZ.AY dokunuşuyla yeniden hayat buluyor!</p>
+            <a href="xox_oyun.html">HEMEN OYNA</a> 
         </div>
 
         <div class="game-card">
